@@ -22,13 +22,27 @@
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lz4-os-ZgT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLS-WZ-e2q">
+                                <rect key="frame" x="132" y="403" width="150" height="90"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="2zO-TE-8Mk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="5Tx-26-mMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Light!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ioM-Ui-30L" secondAttribute="trailing" id="4Mh-ax-ETC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ioM-Ui-30L" secondAttribute="bottom" id="NNZ-dE-GwW"/>
+                            <constraint firstItem="kLS-WZ-e2q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OWo-6D-a86"/>
                             <constraint firstItem="ioM-Ui-30L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SNA-YL-ZLV"/>
+                            <constraint firstItem="kLS-WZ-e2q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a4H-gP-5UQ"/>
                             <constraint firstItem="ioM-Ui-30L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pnh-5M-imW"/>
                         </constraints>
                     </view>
