@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -14,6 +15,8 @@ class ViewController: UIViewController {
     }
     
     var color = 0
+    
+    var isTorch = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,5 +46,36 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func actionTorchClick(_ sender: Any) {
+        guard let device = AVCaptureDevice.default(for: AVMediaType.video) else {
+          return
+        }
+        
+        if device.hasTorch {
+            isTorch = !isTorch
+            
+            do {
+                try device.lockForConfiguration()
+                
+                if isTorch == true {
+                    device.torchMode = .on
+                }
+                
+                else {
+                    device.torchMode = .off
+                }
+                
+                device.unlockForConfiguration()
+            }
+            
+            catch {
+                print("Torch is not working.")
+            }
+        }
+        
+        else {
+            print("Torch not compatible with device")
+        }
+    }
 }
 
