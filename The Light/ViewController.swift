@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         return true
     }
     
-    var isLightOn = true
+    var color = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +22,23 @@ class ViewController: UIViewController {
     }
     
     fileprivate func updateUI() {
-        view.backgroundColor = isLightOn ? .white : .black
+        switch color {
+        case 0:
+            view.backgroundColor = .cyan
+            color = 1
+        case 1:
+            view.backgroundColor = .purple
+            color = 2
+        case 2:
+            view.backgroundColor = .yellow
+            color = 0
+        default:
+            view.backgroundColor = .cyan
+        }
     }
 
 
     @IBAction func buttonPressed() {
-        isLightOn.toggle()
         updateUI()
     }
 }
