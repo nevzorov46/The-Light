@@ -12,5 +12,7 @@ A user can change the color of the screen by tapping into the empty space of the
 ![3](https://user-images.githubusercontent.com/54248784/103477521-c3e47e00-4dd0-11eb-9d34-f5dcd4e4f15c.png)
 
 Also, a user can enable and then disable the torch by pressing "Light!" button. 
+
 In additional, the icon has been added to this app:
+
 ![4](https://user-images.githubusercontent.com/54248784/103477523-c6df6e80-4dd0-11eb-9ebe-991d72667352.png)
