@@ -10,20 +10,26 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    // Hide status bar
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    var color = 0
+   // Variable for the switching background color.
+   private var color = 0
     
-    var isTorch = false
-
+   // Variable for switching state of the torch light.
+   private var isTorch = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
       
     }
     
+    
+    /// This function changes background color depends on integer.
     fileprivate func updateUI() {
         switch color {
         case 0:
@@ -40,7 +46,8 @@ class ViewController: UIViewController {
         }
     }
 
-
+    
+    /// Called whe a user taps on the empty space on the screen.
     @IBAction func buttonPressed() {
         updateUI()
     }
